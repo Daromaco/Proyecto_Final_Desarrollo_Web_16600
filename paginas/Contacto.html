@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="headerLogo">
+            <a href="../index.html"> <img src="https://seeklogo.com/images/R/rocket-logo-B848750683-seeklogo.com.png" alt="logo_rocket_travel"> </a>
+        </div>
+        <nav class="headerMenu">
+            <ul>
+                <li> <a href="../index.html">   Principal   </a>    </li>
+                <li> <a href="America.html">    América     </a>    </li>
+                <li> <a href="Africa.html">     África      </a>    </li>
+                <li> <a href="Asia.html">       Asia        </a>    </li>
+                <li> <a href="Oceania.html">    Oceania     </a>    </li>
+                <li> <a href="Europa.html">     Europa      </a>    </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Titulo Principal Web -->
+    <h1 class="estilo_titulares">ROCKET TRAVEL</h1>
+    <!-- Sección Linkeada -->
+    <h2 class="estilo_titulares_secundarios">Contacto</h2>
+    <main>
+        <form>
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No comparta la información personal a terceros</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">País</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CL">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="MX">México</option>
+                        <option value="UR">Uruguay</option>
+                        <option value="BV">Venezuela</option>
+                    </select>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">¿Desea suscribirse al boletín?</label>
+                </div>
+            </div>
+                       
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-primary">Borrar</button>
+          </form>
+    </main>
+    
+</body>
+</html>

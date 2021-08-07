@@ -1,0 +1,1037 @@
+/* Quitar los margenes por defecto de los elementos*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Quitar los subrayados de los hipervinculos*/
+a{
+    text-decoration: none;
+}
+/*Flexbox para el logo y el nav del header*/
+.header{
+    width: 100%;
+    height: 100px;
+     /* background-color: rgb(184, 230, 230);  */
+     background-image: linear-gradient(to top,#b5ead7, #ADF7B6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerLogo{
+    width: 100px;
+    margin-left: 20px;
+
+    img{
+        width: 100%;
+    }
+}
+.headerMenu{
+    width: 40%;
+    margin-right: 20px;
+
+    ul li a{
+        color: black;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    ul li{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        /*text-align: center;
+        text-decoration: none;*/
+        display: inline;
+    }
+}
+
+.estilo_titulares{
+    color:blue;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background-color: lightcoral;
+}
+
+.estilo_titulares_secundarios{
+    color: maroon;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+table {
+    border: 1px solid indigo;
+}
+th {
+    border: 1px solid blue;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+
+}
+td {
+    border: 1px solid black;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    text-align: justify;
+}
+
+/*Europa*/
+
+#Europa__grilla{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 150px 150px;
+    grid-template-areas:    "Venecia Venecia Paris"
+                            "Venecia Venecia Roma";
+    padding: 80px;
+}
+#Europa__imagenUno{
+    grid-area: Venecia;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Europa__imagenUno:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#Europa__imagenDos{
+    grid-area: Paris;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Europa__imagenDos:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+
+#Europa__imagenTres{
+    grid-area: Roma;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Europa__imagenTres:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+
+/*Africa*/
+
+#Africa__grilla{
+    display: grid;
+    grid-template-columns: 20% 11% 20% 20%;
+    grid-template-rows: 208px 187px;
+    grid-template-areas:    "Egipto Egipto Gorilas Gorilas"
+                            "Kilimanjaro Kilimanjaro Gorilas Gorilas";
+    padding: 80px;
+}
+#Africa__imagenUno{
+    grid-area: Egipto;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Africa__imagenUno:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+
+#Africa__imagenDos{
+    grid-area: Gorilas;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Africa__imagenDos:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+#Africa__imagenTres{
+    grid-area: Kilimanjaro;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Africa__imagenTres:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+/*America*/
+
+#America__grilla{
+    display: grid;
+    grid-template-columns: 49% 49% ;
+    grid-template-rows: 350px 350px;
+    grid-template-areas:    "Argentina Mexico"
+                            "Ecuador _Peru";
+    padding: 80px;
+}
+#America__imagenUno{
+    grid-area: Argentina;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+    
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#America__imagenUno:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#America__imagenDos{
+    grid-area: Mexico;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#America__imagenDos:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#America__imagenTres{
+    grid-area: Ecuador;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#America__imagenTres:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#America__imagenCuatro{
+    grid-area: _Peru;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#America__imagenCuatro:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+/*Asia*/
+
+#Asia__grilla{
+    display: grid;
+    grid-template-columns: 49% 49% ;
+    grid-template-rows: 350px 350px;
+    grid-template-areas:    "China Jordania"
+                            "India Japon";
+    padding: 80px;
+}
+#Asia__imagenUno{
+    grid-area: China;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Asia__imagenUno:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#Asia__imagenDos{
+    grid-area: Jordania;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Asia__imagenDos:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#Asia__imagenTres{
+    grid-area: India;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Asia__imagenTres:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#Asia__imagenCuatro{
+    grid-area: Japon;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Asia__imagenCuatro:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+/*Oceania*/
+
+#Oceania__grilla{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 250px 250px;
+    grid-template-areas:    "New_Zeland New_Zeland Sidney Sidney"
+                            "New_Zeland New_Zeland Pascua Pascua";
+    padding: 80px;
+}
+#Oceania__imagenUno{
+    grid-area: New_Zeland;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Oceania__imagenUno:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#Oceania__imagenDos{
+    grid-area: Sidney;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Oceania__imagenDos:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#Oceania__imagenTres{
+    grid-area: Pascua;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Oceania__imagenTres:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+/*Transitions*/
+.headerMenu ul li:hover {
+    transition: 1s;
+    font-size: 2rem;
+}
+
+
+/*Página Index*/
+
+.descripcion__inicial__paginaPrincipal{
+    color:black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    padding: 20px;
+}
+
+.estilo_titulares_generales{
+    margin-bottom: 5px;
+}
+
+#Index__grilla{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 200px ;
+    grid-template-areas:    "Ame Afr Asi Eur Oce";
+    padding: 80px;
+}
+
+#Index__Ame{
+    grid-area: Ame;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+
+    img{
+        
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Index__Ame:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#Index__Eur{
+    grid-area: Eur;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Index__Eur:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+
+#Index__Afr{
+    grid-area: Afr;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Index__Afr:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+#Index__Asi{
+    grid-area: Asi;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Index__Asi:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+#Index__Oce{
+    grid-area: Oce;
+    position:relative;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 1em;
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    div{
+        position:absolute;
+        background: black;
+        color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 30%;
+        
+        
+        vertical-align: middle;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+        visibility: hidden;
+    }
+}
+#Index__Oce:hover{
+    cursor: pointer;
+    div{
+        visibility:visible;
+        opacity: 0.7; 
+    }
+}
+/*Footer*/
+.social-footer {
+    padding: 1rem;
+    background: #7b94e6;
+    /*display: -webkit-flex;
+    display: -ms-flexbox;*/
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+  
+.social-footer .social-footer-icons li:last-of-type {
+margin-right: 0;
+/*padding: 0 2rem;*/
+}
+
+.social-footer .social-footer-icons .fa {
+font-size: 1.3rem;
+color: #fefefe;
+}
+
+.social-footer ul li{
+    display: inline;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+color: #4a4a4a;
+transition: color 0.3s ease-in;
+}
+.social-footer .social-footer-left {
+    width: 30px;
+    height: 30px;
+}
+
+.social-footer .social-footer-left img {
+    width: 100%;
+    height: 100%;
+}
